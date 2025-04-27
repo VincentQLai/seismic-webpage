@@ -31,7 +31,14 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
-<li class="nav-item"><a class="nav-link" href="articles/seismicGWAS.html">Get started</a></li>
+<li class="active nav-item"><a class="nav-link" href="index.html">Get started</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-data-processing" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Data processing</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-data-processing">
+<li><a class="dropdown-item" href="articles/GWAS_processing.html">GWAS preprocessing</a></li>
+    <li><a class="dropdown-item" href="articles/scRNA-seq_processing.html">scRNA-seq preprocessing</a></li>
+  </ul>
+</li>
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
       </ul>
 <ul class="navbar-nav">
@@ -50,7 +57,7 @@
 <div class="page-header"><h1 id="seismic-single-cell-expression-integration-system-for-mapping-genetically-implicated-cell-types">
 <em>seismic</em>: Single-cell Expression Integration System for Mapping genetically Implicated Cell types<a class="anchor" aria-label="anchor" href="#seismic-single-cell-expression-integration-system-for-mapping-genetically-implicated-cell-types"></a>
 </h1></div>
-<p>This repository contains code for the R package <em>seismicGWAS</em> a method for calculating cell type-trait associations given GWAS and single cell RNA-sequencing data.</p>
+<p>This repository contains code for the R package <em>seismicGWAS</em>, a computational framework for mapping geneticly implicated cell types and their driver genes in complex traits and diseases, by integrating GWAS and single cell expression data.</p>
 <div class="section level2">
 <h2 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
 </h2>
