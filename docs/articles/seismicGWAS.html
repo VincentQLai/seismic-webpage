@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>A simple introduction to seismic • seismicGWAS</title>
+<title>A simple introduction to seismicGWAS • seismicGWAS</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="A simple introduction to seismic">
+<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="A simple introduction to seismicGWAS">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -58,7 +58,7 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
 
-      <h1>A simple introduction to seismic</h1>
+      <h1>A simple introduction to seismicGWAS</h1>
             
       
       <small class="dont-index">Source: <a href="https://github.com/ylaboratory/seismic/blob/HEAD/vignettes/seismicGWAS.Rmd" class="external-link"><code>vignettes/seismicGWAS.Rmd</code></a></small>
@@ -67,11 +67,11 @@
 
     
     
-<p>This vignette introduces the <code>seismicGWAS</code> package an implementation of the <em>seismic</em> framework for linking cell types with traits using single-cell RNA-seq data and MAGMA summarized GWAS data. We organize this vignette in two sections: Section 1 contains a walk through using the sample data included with the <code>seismicGWAS</code> package, and Section 2 walks through data starting from a SingleCellExperiment object. In both cases, <a href="https://cncr.nl/research/magma/" class="external-link">MAGMA</a> is needed to produce gene level GWAS summaries.</p>
+<p>This vignette introduces the <code>seismicGWAS</code> package, an implementation of the <em>seismic</em> framework for linking cell types with traits using single-cell RNA-seq data and MAGMA summarized GWAS data. We organize this vignette in two sections: Section 1 contains a walk through using the sample data included with the <code>seismicGWAS</code> package, and Section 2 walks through data starting from a SingleCellExperiment object. In both cases, <a href="https://cncr.nl/research/magma/" class="external-link">MAGMA</a> is needed to produce gene level GWAS summaries.</p>
 <div class="section level3">
 <h3 id="setup">Setup<a class="anchor" aria-label="anchor" href="#setup"></a>
 </h3>
-<p>First, install and load the seismic package. If you have not yet installed <code>seismicGWAS</code>, use <code>devtools::install(path_to_seismic_folder)</code>.</p>
+<p>First, install and load the seismic package. If you have not yet installed <code>seismicGWAS</code>, use <code>devtools::install(path_to_seismic_folder)</code> or <code>devtools::install_github("ylaboratory/seismicGWAS")</code>.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ylaboratory/seismic" class="external-link">seismicGWAS</a></span><span class="op">)</span></span></code></pre></div>
 </div>
